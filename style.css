@@ -8,8 +8,19 @@ body{
     background-color: rgb(43, 226, 125);
     font-size: 1.2rem;
     padding: 2px 5px;
-    transform: rotate(-15deg) translate(-1rem,-1rem);
-    background-shadow:
+    animation: angleAnimation ease 0.3s;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+    transform-origin: 0px 0px;
+}
+.genre-badge::before{
+    position: absolute;
+    background-color: rgb(253, 123, 225);
+    top:2rem;
+    z-index: 999;
+}
+.music-card{
+    overflow: hidden;
 }
 .music-jumbo{
     animation: fadeInAnimation ease 3s;
@@ -46,5 +57,13 @@ body{
     }
     100% {
         clip-path: polygon(0 0, 100% 35%, 100% 74%, 0 100%);
+     }
+}
+@keyframes angleAnimation {
+    0% {
+        transform: translateX(-20rem)
+    }
+    100% {
+        transform: translateX(0rem)
      }
 }
