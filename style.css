@@ -1,0 +1,50 @@
+body{
+    font-family: sans-serif;
+}
+.genre-badge {
+    position: absolute;
+    top: 0rem;
+    left: 0rem;
+    background-color: rgb(43, 226, 125);
+    font-size: 1.2rem;
+    padding: 2px 5px;
+    transform: rotate(-15deg) translate(-1rem,-1rem);
+    background-shadow:
+}
+.music-jumbo{
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+}
+.mark-azure{
+    background-color: rgb(72, 158, 158);
+    clip-path: polygon(10% 10%, 100% 0%, 90% 100%, 0% 100%);
+    padding: 5px 45px;
+}
+.btn-clip{
+    border-radius: 0px;
+    clip-path: polygon(10% 0%, 100% 10%, 90% 100%, 0% 90%);
+}
+.btn-clip:hover{
+    animation: pathAnimation ease 0.3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
+@keyframes pathAnimation {
+    0% {
+        clip-path: polygon(10% 10%, 100% 0%, 90% 100%, 0% 100%);
+    }
+    100% {
+        clip-path: polygon(0 0, 100% 35%, 100% 74%, 0 100%);
+     }
+}
