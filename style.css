@@ -192,6 +192,8 @@ section#top a:hover::after {
   opacity: 0;
   transform: translateY(-300px);
   transform: scale(0);
+  width: 240px;
+  height: auto;
 }
 .album-container.transition-y {
   top: 0px;

@@ -108,7 +108,7 @@ Make sure you check the documentation before creting anything custom.
     
     <div class="container py-2" style="overflow: hidden;">
         <div class="row mt-4 py-3 text-center justify-content-center"><h2 class="display-5">Here is my favorite music</h2></div>
-        <div class="row py-3">
+        <div class="row py-3 favorite-albums-container">
             <div class="col-6 col-md-4 col-lg-3 mb-3 h-100">
                 <div class="album-container">
                     <div class="card text-center hover-shadow-lg hover-translate-y">
@@ -154,20 +154,18 @@ Make sure you check the documentation before creting anything custom.
                   <input type="text" class="form-control" id="artist-name">
                   <label for="album-name" class="col-form-label">Album</label>
                   <input type="text" class="form-control" id="album-name">
-                  <label for="album-image" class="col-form-label">Album Image</label>
-                  <input type='file' />
+                  <label for="album-name" class="col-form-label">Genre</label>
+                  <input type="text" class="form-control" id="genre-name">
                   <label for="album-year" class="col-form-label">Album Year</label>
-                  <input type="text" class="form-control" id="album-year">
-                </div>
-                <div class="form-group">
-                  <label for="message-text" class="col-form-label">Message:</label>
-                  <textarea class="form-control" id="message-text"></textarea>
+                  <input type="number" class="form-control" id="album-year">
+                  <label for="album-image" class="col-form-label" style="display: block;">Album Image</label>
+                  <input style="display: block;" type='file' accept="image/*">  
                 </div>
               </form>
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Send message</button>
+              <button type="button" data-dismiss="modal" class="btn btn-primary submit-album">Add album</button>
             </div>
           </div>
         </div>
