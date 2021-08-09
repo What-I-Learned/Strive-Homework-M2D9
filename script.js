@@ -40,7 +40,7 @@ function addAlbum() {
       "mb-3",
       "h-100"
     );
-    dalbumInnerContainer.innerHTML = `
+    albumInnerContainer.innerHTML = `
     <div class="card text-center hover-shadow-lg hover-translate-y">
         <div class="card-top py-3 px-1">
             <img class="img-fluid rounded-circle" src=${url} alt="">
